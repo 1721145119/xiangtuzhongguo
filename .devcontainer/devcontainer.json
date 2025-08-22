@@ -1,0 +1,22 @@
+
+{
+    "name": "xiangtuzhongguo",
+    "build": {
+        "dockerfile": "Dockerfile"
+    },
+    "features": {
+        "ghcr.io/devcontainers/features/python:1": {
+            "version": "latest",
+            "installTools": true
+        }
+    },
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "ms-python.python"
+            ]
+        }
+    },
+    "postCreateCommand": "python -m venv .venv && . .venv/bin/activate && pip install python-docx",
+    "remoteUser": "vscode"
+}
