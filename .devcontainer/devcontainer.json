@@ -1,6 +1,6 @@
 
 {
-    "name": "Python Development",
+    "name": "python-docx文档生成",
     "build": {
         "dockerfile": "Dockerfile"
     },
